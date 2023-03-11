@@ -206,13 +206,14 @@ footer p{
     margin: auto;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
-#role-links{
+
+#role-links {
     margin: auto;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
@@ -268,24 +269,25 @@ footer p{
     transition: .3s;
     transform: scale(1.3,1.3);
 }
-#mid-vid{
+#mid-vid {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
+/* i need to find new placement for the section below. it is the h2 wireframes
 #Section2{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
-}
+} */
 
 #Sneakers1{
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
     width: 70%;
     margin: auto;
     border: 1px solid black;
@@ -293,8 +295,8 @@ footer p{
 #Sneakers2{
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
     width: 70%;
     margin: auto;
     border: 1px solid black;
@@ -302,8 +304,8 @@ footer p{
 #Sneakers3{
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
     width: 70%;
     margin: auto;
     border: 1px solid black;
@@ -312,8 +314,8 @@ footer p{
 #hifi1{
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
     width: 70%;
     margin: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -321,18 +323,18 @@ footer p{
 #hifi2{
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
     width: 70%;
     margin: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-#hifi3{
+#hifi3 {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
     width: 70%;
     margin: auto;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 }
