@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: large;
 }
 body {
     height: 100%;
@@ -130,29 +131,47 @@ a:hover{
         left: 0;
     }
   }
-
-  @media(min-width: 1280px) and (max-width: 1920px){
+/* everything equal to or greater than 1280px */
+@media(min-width: 1280px){
     .emkmain{
         background-color: white;
     }
-    .emkslideOne{
+    .photolayer{
         margin-top: 30px;
-        background-color: white;
+        background: url(./images/screen_dash.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-sizing: border-box;
+        height: 30rem;
+    }
+    .emkslideOne{
+        background-color: black;
+        color: white;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr 1fr 1fr;
-        padding: 0 30px 0 30px;
+        grid-template-rows: 30% 1fr 1fr;
+        padding: 0 30px 30px 30px;
     }
+   
     .emkOneOne{
         grid-column: 1/2;
         grid-row: 1/2;
         margin-top: 20px;
     }
+    .ipadhifimockup{
+        width:500px;
+    }
     .emkOneTwo{
         grid-column: 2/3;
         grid-row: 1/2;
-        position: absolute;
-        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: left;
+    }
+    .emkOneTwo img{
+        width: 50%;
     }
     .emkOneThree{
         grid-column: 1/2;
@@ -162,8 +181,6 @@ a:hover{
     .emkOneFour{
         grid-column: 2/3;
         grid-row: 2/3;
-        margin: auto;
-        text-align: center;
     }
     .emkOneFive{
         grid-column: 1/2;
@@ -288,12 +305,40 @@ a:hover{
     .emkslideSeven{
         background-color: white;
     }
+    .ipadDescription{
+        width: 60%;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+    .ipadIdeation{
+        width: 58rem;
+        height: 42rem;
+    }
     .Sevencontent{
         padding-left: 30px;
         padding-top: 40px;
     }
+    .sevenTwo{
+        margin: auto;
+    }
     .sevenFour{
-        padding-top: 30px;
+        margin-top: 100px;
+    }
+    .design_row_text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .design_column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .design_column img{
+        width: 70%;
+        margin-bottom: 20px;
     }
     .emkslideEight{
         background-color: white;
@@ -320,10 +365,6 @@ a:hover{
         width: 250px;
         height: 30px;
         margin-top: 50px;
-    }
-    .eightimgOne{
-        grid-column: 2/3;
-        grid-row: 1/2;
     }
     .emkslideNine{
         background-color: white;
@@ -386,6 +427,14 @@ a:hover{
     }
     .slideTenThree{
         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 50px;
+        padding: 30px 30px;
+        background-color: #FFEDE4;
+    }
+    .outtakes_row{
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin-top: 50px;
@@ -415,7 +464,8 @@ a:hover{
         padding-bottom: 30px;
     }
 }
-@media (min-width: 789px) and (max-width: 1879px){
+/* everything equal to or less than 1279px */
+@media (max-width: 1279px){
     #emkbody{
         width: fit-content;
     }
@@ -425,6 +475,15 @@ a:hover{
     .emkmain{
         background-color: white;
         width: fit-content; 
+    }
+     .photolayer{
+        margin-top: 30px;
+        background: url(./images/screen_dash.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-sizing: border-box;
+        height: 30rem;
     }
     .emkslideOne{
         margin-top: 30px;
@@ -602,12 +661,25 @@ a:hover{
     .emkslideSeven{
         background-color: white;
     }
+    .ipadDescription{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+    .ipadIdeation{
+        width: 40rem;
+        height: 30rem;
+    }
     .Sevencontent{
         padding-left: 30px;
         padding-top: 40px;
     }
     .sevenFour{
-        padding-top: 30px;
+        margin-top: 100px;
     }
     .emkslideEight{
         background-color: white;
@@ -743,8 +815,8 @@ a:hover{
         padding-bottom: 30px;
     }
 }
-
-@media (max-width: 788px) and (min-width: 300px){
+/* everything equal to or more than 299px */
+ @media (max-width: 299px){
     .aTags{
         display: flex;
         flex-direction: column-reverse;
@@ -938,6 +1010,15 @@ a:hover{
     .emkslideSeven{
         background-color: white;
     }
+    .ipadDescription{
+        width: 40%;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+    .ipadIdeation{
+        width: 43rem;
+        height: 30rem;
+    }
     .Sevencontent{
         padding-left: 30px;
         padding-top: 40px;
@@ -946,7 +1027,7 @@ a:hover{
         font-weight: bold;
     }
     .sevenFour{
-        padding-top: 30px;
+        padding-top: 100px;
     }
     .sevenFour>h2{
         font-weight: bold;
@@ -1089,353 +1170,7 @@ a:hover{
         width: 70%;
         padding-bottom: 30px;
     }
-}
-@media (max-width: 299px){
-    .aTags{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    #emkbody{
-        width: fit-content;
-    }
-    #emkarticle{
-        width: fit-content;
-    }
-    .emkmain{
-        background-color: white;
-        width: fit-content;
-    }
-    .emkslideOne{
-        margin-top: 30px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 30px;
-    }
-    .emkOne{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-left: 30px;
-    }
-    .emkOneOne{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin-top: 20px;
-    }
-    .emkOneTwo{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        position: absolute;
-        right: 0;
-    }
-    .emkOneTwo>img{
-        display: none;
-    }
-    .emkOneThree{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 80%;
-    }
-    .emkOneFour{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .emkOneFive{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        width: 80%;
-    }
-    .emkOneSix{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .emkslideTwo{
-        background-color: white;
-    }
-    .emkTwoOne{
-        padding: 10px 0 0 30px;
-    }
-    .emkTwoOne>img{
-        width: 100%;
-    }
-    .emkslideThree{
-        background-color: white;
-        padding-bottom: 10px;
-    }
-    .greyboxOne{
-        padding-left: 30px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        background-color: #F2F2F2;
-    }
-    .emkOne{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-left: 30px;
-        flex-wrap: wrap;
-    }
-    .emkslideThreeTitle{
-        padding-left: 30px;
-        padding-top: 30px;
-    }
-    .emkslideThreeTitle>h3{
-        font-weight: bold;
-    }
-    .emkThreeOne{
-        width: 500px;
-    }
-    .emkThreeTwo{
-        width: 500px;
-    }
-    .emkThreeThree{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .emkThreeThree>img {
-        display: none;
-    }
-    .emkTwo{
-        margin-left: 30px;
-    }
-    .emkslideFour{
-        background-color: white;
-        padding-left: 30px;
-        margin-bottom: -17px;
-    }
-    .emkFourOneOne>h3{
-        font-weight: bold;
-    }
-    .emkFourTwo{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-    .emkFourTwoOne{
-        width: 500px;
-    }
-    .emkFourTwoTwo{
-        width: 500px;
-    }
-    .emkslideFive{
-        background-color: white;
-        padding-top: 60px;
-    }
-    .fiveGroup{
-        padding-left: 30px;
-    }
-    .greyboxTwo{
-        padding-left: 30px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        background-color: #F2F2F2;
-    }
-    .emkslideSix{
-        background-color: white;
-    }
-    .greyboxThree{
-        padding-left: 30px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        background-color: #F2F2F2;
-    }
-    .slidesixcontent{
-        padding-left: 30px;
-        padding-top: 30px;
-    }
-    .infarcgrid{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .infromarc{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .pOne{
-        width: 300px;
-        padding: 10px;
-    }
-    .pTwo{
-        width: 300px;
-        padding: 10px;
-    }
-    .pThree{
-        width: 300px;
-        padding: 10px;
-    }
-    .greyboxFour{
-        padding-left: 30px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        background-color: #F2F2F2;
-    }
-    .emkslideSeven{
-        background-color: white;
-    }
-    .Sevencontent{
-        padding-left: 30px;
-        padding-top: 40px;
-    }
-    .Sevencontent>h2{
-        font-weight: bold;
-    }
-    .sevenFour{
-        padding-top: 30px;
-    }
-    .sevenFour>h2{
-        font-weight: bold;
-    }
-    .emkslideEight{
-        background-color: white;
-        padding-left: 30px;
-        padding-top: 40px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        margin-bottom: 40px;
-    }
-    #emktestbutton{
-        width: 100%;
-        padding-left: 20px;
-        padding-top: 30px;
-    }
-    .eightTwo{
-        color: white;
-        background-color: orange;
-        border-radius: 28px;
-        padding: 4px 10px;
-        width: 129px;
-        height: 30px;
-        margin-top: 50px;
-    }
-    .eightTwo:hover{
-        color: black;
-        background-color: orange;
-        border-radius: 28px;
-        padding: 4px 10px;
-        width: 129px;
-        height: 30px;
-        margin-top: 50px;
-    }
-    .eightimgOne{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        margin: auto;
-        text-align: center;
-    }
-    .emkslideNine{
-        background-color: white;
-    }
-    .headtitleNine>h3{
-        font-weight: bold;
-    }
-    .greyboxFive{
-        padding-left: 30px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        background-color: #F2F2F2;
-    }
-    .slideNineOne{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .slideNineOne>img{
-        content-visibility: hidden;
-    }
-    .slideNineOneOne{
-        width: 400px;
-    
-    }
-    .slideNineOneTwo{
-        width: 400px;
-    }
-    
-    .slideNinecontent{
-        padding-left: 30px;
-        padding-top: 30px;
-        width: fit-content;
-    }
-    .slideNineThree{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    .slideNineThree>img{
-        content-visibility: hidden;
-    }
-    .slideNineThreeSubOne{
-        width: 400px;
-    }
-    .slideNineThreeSubTwo{
-        width: 400px;
-    }
-    .slideNineTwo{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    .emksubslideOne{
-        padding-left: 30px;
-    }
-    .emksubslideOne>h3{
-        font-weight: bold;
-    }
-    .emksubslideTwo{
-        padding-left: 30px;
-    }
-    .emksubslideTwo h3{
-        font-weight: bold;
-        padding-top: 30px;
-    }
-    .slideNineTwo>img{
-        content-visibility: hidden;
-    }
-    .slideTenThree{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 50px;
-        padding: 30px 30px;
-        background-color: #FFEDE4;
-    }
-    .slideTenOne{
-        width: 300px;
-    }
-    .slideTenTwo{
-        width: 300px;
-    }
-    .subTenOne{
-        width: 400px;
-    }
-    .emkslideEleven{
-        padding-left: 30px;
-        padding-top: 60px;
-    }
-    .nsIcons{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .slideElevenOne{
-        width: 70%;
-        padding-bottom: 30px;
-    }
-}
+} 
 footer>.btn{
     display: flex;
     justify-content: center;
