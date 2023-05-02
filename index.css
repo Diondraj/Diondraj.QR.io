@@ -426,7 +426,7 @@ footer p{
 /* everything equal to or more than 1700px */
 @media(min-width: 1700px){
     .projects{
-        height: 2200px;
+        height: 2499px;
         display: flex;
         align-items: center;
         justify-content: center;
