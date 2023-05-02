@@ -153,7 +153,13 @@ a:hover{
         grid-template-rows: 30% 1fr 1fr;
         padding: 0 30px 30px 30px;
     }
-   
+    .emkOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
     .emkOneOne{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -1035,7 +1041,7 @@ a:hover{
         font-weight: bold;
     }
     .Sevencontent p{
-        width: 50%;
+        
     }
     .sevenFour{
         padding-top: 100px;
@@ -1177,7 +1183,7 @@ a:hover{
     }
     .slideTenThree{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         margin-top: 50px;
         padding: 30px 30px;
