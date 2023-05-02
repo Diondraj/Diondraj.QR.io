@@ -239,9 +239,8 @@ article{
     width: 100%
 }
 .toolkit h1{
-    font-size: 72px;
     color: white;
-    margin-bottom: 30px;
+    margin-top: 90px;
 }
 .toolkitbox{
     margin-top: 20px;
@@ -964,7 +963,7 @@ footer p{
 /* everything equal to or more than 1300px */
 @media(min-width: 1300px){
     .projects{
-        height: 2200px;
+        height: 2499px;
         display: flex;
         align-items: center;
         justify-content: center;
